@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div class="bc"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="pTitle"><span class="pATitle">
+Search Text
+</span></div><div class="sect">
+<p>
+	By entering text into the <span class="label">Search Text</span> field, the list can be filtered to only show the servers you need.
+</p>
+<p>
+	This search is not case-sensitive, and will search for partial matches too.  Wild-card characters ('*', '?')are not supported,</br>
+	however multi-part searches can be achieved by using space as a separator. 
+</p>
+<p>
+	Special searches can also be performed as part of a text search<br/>
+	By entering and exclamation mark ( ! ) followed by a specific letter shown below, the search results can be filtered even further...
+	<ul class="compact">
+		<li><span class="code">!e</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,E" height="16px" width="16px"> servers in an error state</li>
+		<li><span class="code">!w</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,W" height="16px" width="16px"> servers in a warning state</li>
+		<li><span class="code">!o</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,O" height="16px" width="16px"> servers marked as OK</li>
+		<li><span class="code">!m</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,M" height="16px" width="16px"> servers in maintenance mode</li>
+		<li><span class="code">!n</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,N" height="16px" width="16px"> servers not being monitored</li>
+		<br/>
+		<li><span class="code">!c</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,C" height="16px" width="16px"> currently selected (checked) servers</li>
+	</ul>
+</p>
+
+<h2>Examples</h2>
+<p>
+	Entering the search text <span class="code">CTX</span> will search all the managed servers with this text.
+</p>
+<p>
+	Using two or more search terms can help reduce the number of servers down to a few specific ones when dealing with a lot of servers.</br>
+	For example, entering <span class="code">LOC DOM 01</span> will show all servers with ALL of the specified terms, even if you are unsure of the exact server names.
+</p>
+<p>
+	Entering <span class="code">DOM !e</span> will show all servers currently in an error state, with DOM in part of their name.
+</p>
+<p></p>
+</body></html>

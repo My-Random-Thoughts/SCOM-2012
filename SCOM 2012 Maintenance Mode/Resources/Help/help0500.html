@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div class="bc"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="pTitle"><span class="pATitle">
+Server List Options
+</span></div><div class="sect">
+<p>
+	Once you have a list of servers you want to manage, the following options apply to the entire server list
+	<ul>
+		<li>Duration Or Specific Time</li>
+		<li>Category</li>
+		<li>Comment</li>
+	<!--<li>Clusters</li>-->
+		<li>WhatIf.?</li>
+		<li>Schedule Task</li>
+	</ul>
+	These are discussed below...
+</p>
+<h3>Duration Or Specific Time</h3>
+<p>
+	This option will set the length of the maintenance window.<br/>
+	You can either set a duration of the maintenance window from 10 minutes to 86400 minutes (60 days), or you can select a specific date and time in the future.<br/>	
+	Make sure you set enough time to perform the work, more is better in this case.
+</p>
+<h3>Category</h3>
+<p>
+	This will set the SCOM Maintenance mode reason status for the server(s)<br/>
+	If the maintenance mode is a planned one, tick the box, or untick for an unplanned maintenance window.<br/>
+	From the drop down list, select the appropriate option<br/><br/>
+	For more information about maintenance mode categories, see the next section on the left.
+</p>
+<h3>Comment</h3>
+<p>
+	This will set the comment for the maintenance mode reason.<br/>
+	There are two reasons that SCOM uses, one is internal to the application, the other you set here.  The internal one is set to <span class="code">Planned Operating System Reconfiguration</span>
+</p>
+<!--
+<h3>Clusters</h3>
+<p>
+	If you are putting an entire cluster into maintenance mode, and want to make sure the virtual cluster resources are also in maintenance, tick this box.
+	This application will scan for all virtual resources and add those to the internal list of resources to set.  Check the debug auditing log for details.
+</p>
+-->
+<h3>WhatIf.?</h3>
+<p>
+	Just like in Microsoft's PowerShell, this option allows you to run though the entire process, including creating the auditing log, but without making any actual changes.
+</p>
+<h3>Schedule Task</h3>
+<p>
+	This will allow you to schedule future maintenance mode operations.<br/>
+	See the main help note for more information.
+</p>
+<p></p>
+</body></html>

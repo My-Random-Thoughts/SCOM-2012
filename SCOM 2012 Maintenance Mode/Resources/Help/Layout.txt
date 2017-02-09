@@ -1,0 +1,23 @@
+0000	Introduction
+
+0100	Server Entry List
+0101		Import
+0151			Control Codes
+0102		Export
+0103		Search SCOM
+0104		Manual Entry
+
+0500	Server List Options
+0501		Categories
+0502		Scheduled Tasks
+
+0200	Maintenance Results
+0201		Column Headers
+
+0300	Search SCOM
+0301		Search Text
+0303		Update List
+
+0400	Admin Options
+0401		SCOM Server (Enter Management Server FQDN Here)
+0402		Application Defaults

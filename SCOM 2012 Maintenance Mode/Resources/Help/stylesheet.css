@@ -1,0 +1,170 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	line-height: normal;
+	font-family: Segoe UI, Arial, Verdana;
+	font-size: 75%;
+	min-width: 385px;
+}
+
+.code
+{
+	font-family: Courier New!important;
+}
+
+.label
+{
+	font-family: Courier New!important;
+	font-weight: bold;
+	color: #9090ff;
+}
+
+.black
+{
+	color: #000000;
+}
+
+.gray
+{
+	color: #909090;
+}
+
+img
+{
+	vertical-align:middle;
+}
+
+th
+{
+	text-align: left;
+	padding: 0 10px 2px 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #909090;
+	border-bottom-width: 1px;
+}
+
+td
+{
+	padding: 2px 10px 2px 10px;
+}
+
+.sect
+{
+	margin: 15px 10px 0px 10px;
+}
+
+.bc
+{
+	border-bottom: #b6b6b6 1px solid;
+	padding: 3px 10px 3px 10px;
+	background-color: #f2f2f2;
+	line-height: 1.1em;
+	color: #666666;
+	font-size: 0.9em;
+}
+
+.pTitle
+{
+	min-height: 22px;
+	padding: 8px 15px 9px;
+	margin: 0 0 10px;
+	background-color: #f9f9f9;
+	border-bottom: #e2e2e2 1px solid;
+}
+
+.pATitle
+{
+	font-weight: bold;
+	font-size: 1.9em;
+	margin: 0px;
+	padding: 0px;
+	color: #999999;
+}
+
+.sect h2
+{
+	font-size: 20px;
+	font-family: Segoe UI, Arial, Verdana;
+	font-weight: normal;
+	color: #454545;
+	margin: 35px 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffc200;
+	border-bottom-width: 1px;
+	line-height: 0.9em
+}
+
+.sect h3
+{
+	font-size: 14px;
+	font-family: Segoe UI, Arial, Verdana;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #454545;
+	margin: 25px 0px 10px 0px;
+	padding: 0;
+}
+
+.sect h2 + h3, .sect h3 + p
+{
+	margin: 5px 0 0px 0;
+}
+
+.sect ol,.sect ul
+{
+	list-style-position: outside;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+
+.sect ol li,.sect ul li
+{
+	padding: 3px 0em;
+}
+
+.sect ol.compact li, .sect ul.compact li
+{
+    padding: 1px 0em;
+    margin: 0px;
+}
+
+.sect li
+{
+    margin: 5px 0px;
+}
+
+.sect ol li ol, .sect ol li ul, .sect ul li ol, .sect ul li ul
+{
+	padding: 5px 0em;
+}
+
+.sect ol ol, .sect ol ul, .sect ul ol, .sect ul ul
+{
+	padding: 0px 0em 5px 0em;
+}
+
+.sect .button 
+{
+	background: #f0f0f0;
+	border-width: 1px 2px 2px 1px;
+	padding: 2px 7px;
+}
+
+.sect .menu 
+{
+	background: #fcfcfc;
+	border: 1px;
+	padding: 2px 7px 2px 4px;
+}
+
+.sect .button, .sect .menu
+{
+	border-style: solid;
+	border-color: #e0e0e0;
+	margin: 0 2px;
+	color: #000;
+	white-space: nowrap;
+} 

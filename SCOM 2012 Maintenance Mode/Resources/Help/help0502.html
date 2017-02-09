@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div class="bc"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="pTitle"><span class="pATitle">
+Scheduled Tasks
+</span></div><div class="sect">
+<p>
+	Scheduled tasks allow you to set a maintenance window to start sometime in the future, so that proactive and pre-planned work can be carried out.
+	Setting a future start time allows administrators to monitor servers up until any planned work is due to start, without having to do this manually.<br/>
+</p>
+<p>
+	Selecting this option, and clicking the <span class="button">Schedule Start/Update</span> button will display a new window allowing you to enter the following details...
+	<ul class="compact">
+		<li><strong>Task Name</strong><br/>
+		A title for the scheduled task,</li>
+		<li><strong>Description</strong><br/>
+		A description for the task.  The list of servers will be entered automatically,</li>
+		<li><strong>Start Time</strong><br/>
+		When you want the scheduled task to start,</li>
+		<li><strong>RunAs Username</strong><br/>
+		The username to use for this scheduled task.  Make sure this user has logon rights to start scheduled jobs,</li>
+		<li><strong>Password</strong><br/>
+		The password for the above user.</li>
+	</ul>
+	
+	When you click <span class="button">Create</span>, the application will:
+	<ol class="compact">
+		<li>Save the currently entered server list into the same folder as the application, using a unique file name,</li>
+		<li>Create a new Windows scheduled task with the name provided and the name of the file to be used.<br/>
+			For example: <span class="code">SCOM Maintenance Mode Task (a54722x)</span></li>
+		<li>Return you to the server list, so that you can create more scheduled tasks if required</li>
+	</ol>
+</p>
+
+<h2>Use Case Example</h2>
+<p>
+	If there is planned work happening over the weekend, say a Sunday between 2am and 4am, you may want to put any affected servers into maintenance mode during this time<br/>
+</p>
+<p>
+	<ul>
+	<li>One way to do this is:
+		<ol class="compact">
+			<li>Wake up at 1:30am,</li>
+			<li>Logon to the corporate VPN,</li>
+			<li>Remote into the SCOM Management server,</li>
+			<li>Find the servers, one at a time,</li>
+			<li>Put them into maintenance mode manually.</li>
+		</ol>
+		At 1:30am, you could be half-asleep and mistakes might be made.
+	</li>
+	
+	<li>Another way could be:
+		<ol class="compact">
+			<li>Pre-define the servers affected (during working hours),</li>
+			<li>Wake up at 1:30am,</li>
+			<li>Logon to the corporate VPN,</li>
+			<li>Remote into the SCOM Management server,</li>
+			<li>Put them into maintenance mode using this application.</li>
+		</ol>
+		At 1:30am, you could be half-asleep and mistakes might be made.
+	</li>
+		
+	<li>With the scheduled task option:
+		<ol class="compact">
+			<li>Pre-define the servers affected (during working hours),</li>
+			<li>Run this application using the new scheduled task option to start at 1:30am (during working hours)</li>
+		</ol>
+	</li>
+</p>
+
+
+
+</body></html>

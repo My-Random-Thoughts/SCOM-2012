@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div class="bc"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="pTitle"><span class="pATitle">
+Maintenance Results
+</span></div><div class="sect">
+<p>
+	This is the tab where most of the work is actually performed.<br/>
+	All the selected/entered/imported servers are listed here, sorted and grouped by domain name.
+</p>
+<p>
+	The selected maintenance process then starts, and each server in turn is actioned.
+</p>
+<p>
+	If the selected action (start/update/stop) is successful, three green ticks (<img src="data:image/png;base64,_16___Scan___Pass" height="16px" width="16px">) should be shown next to the server name.
+<!--
+	If the server has any cluster resources, and the cluster check box has been checked, then a fourth tick is also shown.
+-->
+</p>
+<p>
+	If, for any reason an issue occurs, the icons shows could either be a yellow triangle (<img src="data:image/png;base64,_16___Scan___Warning" height="16px" width="16px">) or 
+	a red cross (<img src="data:image/png;base64,_16___Scan___Failed" height="16px" width="16px">), depending on the issue at hand.  A note in the auditing log will explain the exact issue.
+</p>
+<p>
+	Generally,
+	<ul>
+		<li>If a <img src="data:image/png;base64,_16___Scan___Pass"    height="16px" width="16px"> green tick appears, the maintenance action was successful,</li>
+		<li>If a <img src="data:image/png;base64,_16___Scan___Warning" height="16px" width="16px"> yellow triangle is shown along side green ticks for a server, then that particular monitoring item doesn't exist, or has issues,</li>
+		<li>If a <img src="data:image/png;base64,_16___Scan___Failed"  height="16px" width="16px"> red cross appears, it is usually on its own, and could indicate a missing server, in which case, check you have entered it correctly.</li>
+	</ul>
+</p>
+<p></p>
+</body></html>

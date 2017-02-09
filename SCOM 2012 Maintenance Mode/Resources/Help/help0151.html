@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div class="bc"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="pTitle"><span class="pATitle">
+Control Codes
+</span></div><div class="sect">
+<p>
+	Control codes allow you to specify maintenance options with the import file itself.<br/>
+	This allows quick changing of settings for different groups of servers.
+</p>
+<p>
+	For example, you may have a group of servers that routinely need a 5 hour maintenance window, and another group that only need 2 hours.
+	You can set these time windows via a control code called <span class="code">#window</span>.
+</p>
+
+<h2>Import File Control Codes</h2>
+<h3>#window = xx</h3>
+<p>
+	Where <span class="code">xx</span> is the length in minutes. (min:10, max:86400)
+</p>
+<h3>#comment = xxxx</h3>
+<p>
+	Replace <span class="code">xxxx</span> with the text you want to use.
+</p>
+<!--
+<h3>#cluster = TRUE/FALSE</h3>
+<p>
+	Use either <span class="code">TRUE</span> or <span class="code">FALSE</span>
+</p>
+-->
+<h3>#whatif = TRUE/FALSE</h3>
+<p>
+	Use either <span class="code">TRUE</span> or <span class="code">FALSE</span>
+</p>
+<h3>#auto-start</h3>
+<p>
+	This control code does not have any options.  If it is present in the import file, the application will automatically 
+	choose the "Start/Update" maintenance option as soon as the full list has been imported.  It will then close.<br/>
+	This control code can be used for scheduling maintenance mode for future planned events where you may not be available to run this tool yourself.
+</p>
+
+<h2>Example Files</h2>
+<p>
+	Below is an couple of examples of import files, showing the use of the control codes.
+</p>
+<h3>Example 1</h3>
+<p>
+	Set the maintenance window to 2 hours, and check for cluster resources...
+	<ul>
+		<span class="code">
+			#window = 120<br/>
+			#cluster = TRUE<br/>	
+			<br/>
+			server1.domain.local<br/>
+			server2.domain.local<br/>
+			server3.domain.local<br/>
+			server4.domain.local<br/>
+		</span>
+	</ul>
+</p>
+
+<h3>Example 2</h3>
+<p>
+	Change the comment to reflect the reason for the maintenance time...
+	<ul>
+		<span class="code">
+			#comment = Scheduled Windows Patching<br/>	
+			<br/>
+			server1.domain.local<br/>
+			server2.domain.local<br/>
+			server3.domain.local<br/>
+			server4.domain.local<br/>
+		</span>
+	</p>
+</ul>
+
+<h3>Example 3</h3>
+<span class="code">
+<p>
+	All control codes shown...
+	<ul>
+		<span class="code">
+			#window  = 120<br/>
+			#comment = Scheduled Windows Patching<br/>
+			#cluster = TRUE<br/>
+			#whatif  = FALSE<br/>
+			#auto-start<br/>
+			<br/>
+			server1.domain.local<br/>
+			server2.domain.local<br/>
+			server3.domain.local<br/>
+			server4.domain.local<br/>
+		</span>
+	</ul>
+</p>
+<p></p>	
+</body></html>
